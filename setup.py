@@ -1,10 +1,10 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="Clip-CC",
+    name="CLIP-CC",
     version="0.1.0",
     description="CLIP-CC: YouTube summary dataset with optional download/clip helper",
-    author="Sugam Mishra",
+    author="Mukhtiar Ali, Harsh Dubey, Sugam Mishra, Chulwoo Pack",
     author_email="sugam.mishra@jacks.sdstate.edu",
     packages=find_packages(),
     include_package_data=True,

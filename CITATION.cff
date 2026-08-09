@@ -1,0 +1,49 @@
+cff-version: 1.2.0
+message: "If you use CLIP-CC in your research, please cite the paper below."
+title: CLIP-CC
+type: dataset
+authors:
+  - family-names: Ali
+    given-names: Mukhtiar
+    affiliation: South Dakota State University
+  - family-names: Dubey
+    given-names: Harsh
+    affiliation: South Dakota State University
+  - family-names: Mishra
+    given-names: Sugam
+    affiliation: South Dakota State University
+  - family-names: Pack
+    given-names: Chulwoo
+    affiliation: South Dakota State University
+repository-code: "https://github.com/Multimodal-Intelligence-Lab/CLIP-CC"
+# The loader code is released under MIT; the summaries and metadata are released under CC-BY-4.0.
+license:
+  - MIT
+  - CC-BY-4.0
+preferred-citation:
+  type: article
+  title: "CLIP-CC-Bench: Evaluating Paragraph-Level Video Descriptions in Video-Language Models"
+  authors:
+    - family-names: Ali
+      given-names: Mukhtiar
+      affiliation: South Dakota State University
+    - family-names: Dubey
+      given-names: Harsh
+      affiliation: South Dakota State University
+    - family-names: Mishra
+      given-names: Sugam
+      affiliation: South Dakota State University
+    - family-names: Pack
+      given-names: Chulwoo
+      affiliation: South Dakota State University
+  year: 2026
+  doi: "10.48550/arXiv.2608.04302"
+  url: "https://arxiv.org/abs/2608.04302"
+  notes: "arXiv preprint arXiv:2608.04302"
+  identifiers:
+    - type: doi
+      value: "10.48550/arXiv.2608.04302"
+      description: "DOI of the arXiv preprint."
+    - type: url
+      value: "https://arxiv.org/abs/2608.04302"
+      description: "arXiv abstract page for the preprint."

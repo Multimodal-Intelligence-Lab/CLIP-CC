@@ -29,6 +29,8 @@ The **CLIP-CC Dataset** is a carefully curated collection of **200 YouTube video
 
 CLIP-CC is the dataset; [CLIP-CC-Bench](https://github.com/Multimodal-Intelligence-Lab/CLIP-CC-Bench) is the evaluation framework and leaderboard built on it.
 
+*Note: record `034` is a podcast segment rather than a movie clip. It is retained unchanged because it was part of the released dataset and of the evaluation reported in the paper; removing it would break exact reproduction of the published results.*
+
 ### 🔬 How CLIP-CC is Made
 
 <table align="center" width="100%" style="border-collapse: collapse;">
