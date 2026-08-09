@@ -1,0 +1,15 @@
+# Data License
+
+The dataset loader **code** in this repository is released under the MIT
+License (see `LICENSE`).
+
+The **human-written summaries and metadata** in `metadata/metadata.jsonl`
+(and its packaged copy at `clip_cc/data/metadata.jsonl`) are released under the
+**Creative Commons Attribution 4.0 International License (CC-BY-4.0)**:
+https://creativecommons.org/licenses/by/4.0/
+
+The dataset references publicly available source videos by URL only. This
+repository does **not** host or redistribute any video files. The linked
+YouTube videos remain the property of their original copyright holders, and
+users are responsible for complying with the terms of the respective video
+platforms.

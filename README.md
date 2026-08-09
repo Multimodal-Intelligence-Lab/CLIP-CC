@@ -11,12 +11,12 @@
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-teal?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-teal?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![Dataset](https://img.shields.io/badge/🤗_Dataset-Hugging_Face-ff9500?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/datasets/IVSL-SDSU/Clip-CC)
+[![Dataset](https://img.shields.io/badge/🤗_Dataset-Hugging_Face-ff9500?style=for-the-badge&logo=huggingface&logoColor=white)](https://huggingface.co/datasets/MINT-SDSU/CLIP-CC)
 
 </div>
 
 <p align="center">
-  <a href="https://arxiv.org/abs/placeholder-link">📰 Research Paper</a>
+  <a href="https://arxiv.org/abs/2608.04302">📰 Research Paper</a>
   ·
   <a href="https://colab.research.google.com/drive/1FH81YpNAy3dM_wtdnDV9eDe2ZH5vMoab?usp=sharing">📓 Interactive Notebook</a>
 </p>
@@ -26,6 +26,8 @@
 ## 🤔 What is CLIP-CC?
 
 The **CLIP-CC Dataset** is a carefully curated collection of **200 YouTube video links with human-written summaries**, specifically designed for research and experimentation in multimodal AI tasks. This dataset addresses the growing need for high-quality video comprehension benchmarks that can effectively evaluate the narrative understanding capabilities of Large Video Language Models (LVLMs).
+
+CLIP-CC is the dataset; [CLIP-CC-Bench](https://github.com/Multimodal-Intelligence-Lab/CLIP-CC-Bench) is the evaluation framework and leaderboard built on it.
 
 ### 🔬 How CLIP-CC is Made
 
@@ -205,14 +207,14 @@ Choose the installation method that best fits your workflow. All methods provide
 
 **Terminal:**
 ```bash
-git clone https://github.com/hdubey-debug/CLIP-CC.git
+git clone https://github.com/Multimodal-Intelligence-Lab/CLIP-CC.git
 cd CLIP-CC
 pip install .
 ```
 
 **Colab/Jupyter:**
 ```python
-!git clone https://github.com/hdubey-debug/CLIP-CC.git
+!git clone https://github.com/Multimodal-Intelligence-Lab/CLIP-CC.git
 %cd CLIP-CC
 !pip install .
 ```
@@ -240,12 +242,12 @@ pip install .
 
 **Terminal:**
 ```bash
-pip install git+https://github.com/hdubey-debug/CLIP-CC.git
+pip install git+https://github.com/Multimodal-Intelligence-Lab/CLIP-CC.git
 ```
 
 **Colab/Jupyter:**
 ```python
-!pip install git+https://github.com/hdubey-debug/CLIP-CC.git
+!pip install git+https://github.com/Multimodal-Intelligence-Lab/CLIP-CC.git
 ```
 
 <div align="center">
@@ -274,7 +276,7 @@ pip install git+https://github.com/hdubey-debug/CLIP-CC.git
 from datasets import load_dataset
 
 # Load the dataset
-dataset = load_dataset("IVSL-SDSU/Clip-CC")
+dataset = load_dataset("MINT-SDSU/CLIP-CC")
 
 # Access a sample entry
 print(dataset["train"][0])
@@ -286,7 +288,7 @@ print(dataset["train"][0])
 !pip install --upgrade datasets fsspec
 
 from datasets import load_dataset
-dataset = load_dataset("IVSL-SDSU/Clip-CC")
+dataset = load_dataset("MINT-SDSU/CLIP-CC")
 print(dataset["train"][0])
 ```
 
@@ -345,7 +347,7 @@ for entry in data[:3]:
 # Load with Hugging Face
 from datasets import load_dataset
 
-dataset = load_dataset("IVSL-SDSU/Clip-CC")
+dataset = load_dataset("MINT-SDSU/CLIP-CC")
 
 # Explore
 print(f"Dataset: {dataset}")
@@ -527,13 +529,15 @@ CLIP-CC is designed to work seamlessly with [VCS (Video Comprehension Score)](ht
 If you use CLIP-CC Dataset in your research, please cite:
 
 ```bibtex
-@software{vcs_metrics_2024,
-  title = {VCS Metrics: Video Comprehension Score for Text Similarity Evaluation},
-  author = {Dubey, Harsh and Ali, Mukhtiar and Mishra, Sugam and Pack, Chulwoo},
-  year = {2024},
-  institution = {South Dakota State University},
-  url = {https://github.com/Multimodal-Intelligence-Lab/Video-Comprehension-Score},
-  note = {Python package for narrative similarity evaluation}
+@misc{ali2026clipccbench,
+  title         = {{CLIP-CC-Bench}: Evaluating Paragraph-Level Video Descriptions in Video--Language Models},
+  author        = {Ali, Mukhtiar and Dubey, Harsh and Mishra, Sugam and Pack, Chulwoo},
+  year          = {2026},
+  eprint        = {2608.04302},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV},
+  note          = {Presented at the 2nd Workshop on Evaluation for Multimodal Generation (EvalMG), ACM SIGIR 2026},
+  url           = {https://arxiv.org/abs/2608.04302}
 }
 ```
 
@@ -541,14 +545,14 @@ If you use CLIP-CC Dataset in your research, please cite:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+The dataset loader **code** in this repository is released under the [MIT License](LICENSE). The **human-written summaries and metadata** in `metadata.jsonl` are released under **CC-BY-4.0**; this repository hosts no video files, and the linked YouTube videos remain the property of their original copyright holders (see [DATA_LICENSE](DATA_LICENSE)).
 
 ---
 
-### 🌟 **Made with ❤️ by the VCS Team**
+### 🌟 **Made with ❤️ by the CLIP-CC Team**
 
 **Authors**: Harsh Dubey, Mukhtiar Ali, Sugam Mishra, and Chulwoo Pack  
 **Institution**: South Dakota State University  
-**Year**: 2024
+**Year**: 2026
 
-[⭐ Star this repo](https://github.com/hdubey-debug/CLIP-CC) • [🐛 Report Bug](https://github.com/hdubey-debug/CLIP-CC/issues) • [💡 Request Feature](https://github.com/hdubey-debug/CLIP-CC/issues) • [💬 Community Q&A](https://github.com/hdubey-debug/CLIP-CC/discussions)
+[⭐ Star this repo](https://github.com/Multimodal-Intelligence-Lab/CLIP-CC) • [🐛 Report Bug](https://github.com/Multimodal-Intelligence-Lab/CLIP-CC/issues) • [💡 Request Feature](https://github.com/Multimodal-Intelligence-Lab/CLIP-CC/issues) • [💬 Community Q&A](https://github.com/Multimodal-Intelligence-Lab/CLIP-CC/discussions)
