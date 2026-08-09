@@ -551,7 +551,7 @@ The dataset loader **code** in this repository is released under the [MIT Licens
 
 ### 🌟 **Made with ❤️ by the CLIP-CC Team**
 
-**Authors**: Harsh Dubey, Mukhtiar Ali, Sugam Mishra, and Chulwoo Pack  
+**Authors**: Mukhtiar Ali, Harsh Dubey, Sugam Mishra, and Chulwoo Pack  
 **Institution**: South Dakota State University  
 **Year**: 2026
 
